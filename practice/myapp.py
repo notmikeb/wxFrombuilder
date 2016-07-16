@@ -11,6 +11,6 @@ class practiceFrame(practice.MyFrame1):
         # todo pop a window
 
 app = wx.App(False)
-frame =  practiceFrame(None)
+frame =  practice.MyFrame2(None)
 frame.Show(True)
 app.MainLoop()
