@@ -7,7 +7,7 @@ class practiceFrame(practice.MyFrame1):
         practice.MyFrame1.__init__(self, parent)
         pass
     def m_button1OnButtonClick(self, event):
-        self.m_htmlWin1.SetPage("<b>hello world to you <hr> </b>" + time.strftime("%H %M %S"))
+        self.m_htmlWin1.SetPage("<b>hello world to you and me <hr> </b>" + time.strftime("%H %M %S"))
         # todo pop a window
 
 app = wx.App(False)
