@@ -27,8 +27,16 @@ class MyFrame1 ( wx.Frame ):
 		self.m_textCtrl1 = wx.TextCtrl( self, wx.ID_ANY, u"http://www.kimo.com.tw", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer1.Add( self.m_textCtrl1, 0, wx.ALL|wx.EXPAND, 5 )
 		
+		bSizer2 = wx.BoxSizer( wx.HORIZONTAL )
+		
 		self.m_button1 = wx.Button( self, wx.ID_ANY, u"Click Me", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer1.Add( self.m_button1, 0, wx.ALL, 5 )
+		bSizer2.Add( self.m_button1, 0, wx.ALL, 5 )
+		
+		self.m_button2 = wx.Button( self, wx.ID_ANY, u"MyButton", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer2.Add( self.m_button2, 0, wx.ALL, 5 )
+		
+		
+		bSizer1.Add( bSizer2, 1, wx.EXPAND, 5 )
 		
 		self.m_htmlWin1 = wx.html.HtmlWindow( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.html.HW_SCROLLBAR_AUTO )
 		bSizer1.Add( self.m_htmlWin1, 1, wx.ALL|wx.EXPAND, 5 )
